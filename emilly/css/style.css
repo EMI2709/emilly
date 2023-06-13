@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    color: #FFF;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    height: 30px;
+    align-items: center;
+}
+
+.top .fa {
+    margin-right: 5px;
+}
+
+.top ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.prin {
+    display: flex;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 120px;
+}
+
+.fa-phone {
+    font-size: 30px;
+}
+
+.logo {
+    font-size: 40px;
+}
+
+.prin a {
+    color: #000;
+}
+
+.mid {
+    background-color: #000;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    display: flex;
+}
+
+.mid ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.phone {
+    display: flex;
+    gap: 5px;
+}
+
+.banner {
+    width: 97%;
+    height: 400px;
+    margin-bottom: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocks {
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.box p {
+    margin-top: 20px;
+}
+
+.box {
+    width: 150px;
+
+}
+
+.box img {
+    width: 100px;
+    height: 100px;
+    border: 0.1px #000 solid;
+    padding: 10px;
+}
+
+#menuMobile {
+    display: none;
+}
+
+.logos i {
+    font-size: 40px;
+}
+
+@media screen and (max-width:800px){
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #menuMobile {
+        display: block;
+    }
+
+    #iconMenu {
+        cursor: pointer;
+    }
+
+    .fa-bars {
+        font-size: 35px;
+        margin-left: 20px;
+    }
+
+    .fa-x {
+        font-size: 35px;
+        margin-left: 20px;
+    }
+
+    .top {
+        height: 150px;
+        position: absolute;
+        top: 150px;
+        left: -1000px;
+        transition: all 400ms linear;
+    }
+
+    .top ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }   
+
+    .mid {
+        height: 200px;
+        position: absolute;
+        top: 295px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 3px #FFF solid;
+        border-bottom: 3px #FFF solid;
+        left: -1000px;
+        transition: all 400ms linear;
+    }
+
+    .mid ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .prin {
+        flex-direction: column;
+        height: 150px;
+    }
+
+    .blocks {
+        flex-flow: row wrap;
+        display: flex;
+        justify-content: center;
+    }
+}
